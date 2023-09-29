@@ -18,7 +18,7 @@ const Dashboard = ({ isHidden }) => {
     if (isDarkMode) {
       document.body.classList.add("darkmode");
       document.documentElement.style.setProperty("--boxcolor", "rgb(51, 65, 85)");
-      document.documentElement.style.setProperty("--textcolor", "#ffffff");
+    
       document.documentElement.style.setProperty("--textcircle", "rgb(255, 255, 255)");
       document.documentElement.style.setProperty("--cardbox", "#23273b91");
       document.documentElement.style.setProperty("--textcolor3", "#fff");
@@ -26,7 +26,7 @@ const Dashboard = ({ isHidden }) => {
     } else {
       document.body.classList.remove("darkmode");
       document.documentElement.style.setProperty("--boxcolor", "#f8fafc");
-      document.documentElement.style.setProperty("--textcolor", "rgb(15, 23, 42)");
+
       document.documentElement.style.setProperty("--textcolor3", "#rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--cardbox", "rgb(255, 255, 255)");
       document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
