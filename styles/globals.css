@@ -42,7 +42,7 @@ body {
 }
 .carddark {
   background-color: var(--boxcolor) !important;
-  color: var(--textcolor3) !important;
+  color: var(--textcolor3) ;
 }
 .cardsearch {
   overflow: hidden;

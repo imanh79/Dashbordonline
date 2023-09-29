@@ -30,7 +30,7 @@ export default function KpiCardGrid() {
           <Flex alignItems='start'>
             <div className='truncate'>
               <Text className='carddark'>{item.title}</Text>
-              <Metric className='truncate carddark' style={{ color: "white" }}>
+              <Metric className='truncate carddark'>
                 {item.metric}
               </Metric>
             </div>
