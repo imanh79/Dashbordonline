@@ -12,7 +12,6 @@ export default function Document() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <title>Dashboard</title>
       </Head>
-
       <body style={{ position: "relative" }}>
         <Main />
         <NextScript />
