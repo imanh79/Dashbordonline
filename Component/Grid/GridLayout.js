@@ -2,7 +2,7 @@ import React from "react";
 import Gridcol from "./Gridcol";
 const GridLayout = () => {
   return (
-    <div >
+    <div>
       <Gridcol />
     </div>
   );

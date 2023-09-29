@@ -8,11 +8,12 @@ export default function Document() {
         <link
           rel='stylesheet'
           href='https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css'
-          />
+        />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-          <title>Dashboard</title>
+        <title>Dashboard</title>
       </Head>
-      <body >
+
+      <body style={{ position: "relative" }}>
         <Main />
         <NextScript />
       </body>

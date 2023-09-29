@@ -3,22 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --boxcolor: rgb(51, 65, 85);
+  --boxcolor: unset;
   --textcolor: #ffffff;
-  --textcolor2: rgb(15, 23, 42);
+  --textcolor3: unset;
+  --textcolor2: unset;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
-  --hidden-list: rgb(229, 231, 235);
+  --hidden-list: unset;
   --nav: rgb(79, 70, 229);
-  --textcircle: rgb(15, 23, 42);
-  --cardbox: #23273b91;
+  --textcircle: unset;
+  --cardbox: unset;
 }
 body {
   background-color: #f8fafc;
 }
 .cardstyle {
   background-color: var(--cardbox);
-  color: var(--textcolor);
+  color: var(--textcolor3);
 }
 .circlech .fill-tremor-content-emphasis {
   fill: var(--textcircle);
@@ -41,7 +42,7 @@ body {
 }
 .carddark {
   background-color: var(--boxcolor) !important;
-  color: var(--textcolor) !important;
+  color: var(--textcolor3) !important;
 }
 .cardsearch {
   overflow: hidden;
@@ -167,7 +168,7 @@ ul .marks:nth-child(4)::marker {
   .hiddenlist {
     /* display: block; */
     position: absolute;
-    height: 1221px;
+    height: 100%;
     z-index: 3;
     background-color: rgb(229, 231, 235);
     color: rgb(15, 23, 42);
@@ -235,4 +236,8 @@ ul .marks:nth-child(4)::marker {
 }
 .table-t {
   font-weight: 500;
+}
+.imgS {
+  width: 6rem;
+  height: 6rem;
 }

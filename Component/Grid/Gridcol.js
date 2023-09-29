@@ -16,25 +16,27 @@ const Gridcol = () => {
   };
   return (
     <div>
-      <Header toggleHidden={toggleHidden} />
-      <Grid numItemsLg={5} numItemsSm={4}>
-        <Grid numItemsSm={0}>
-          <Dashboard isHidden={isHidden} />
-        </Grid>
-        <Col numColSpan={3} numColSpanLg={4}>
-          <Grid numItems={1} numItemsSm={0} numItemsLg={3} className='gap-2 mt-3 mt0 '>
-            <Col numColSpan={1} numColSpanLg={2} className='gap-2 mid'>
-              <AreaCharts />
-              <Search />
-            </Col>
-            <Col>
-              <KpiCard1 />
-              <KpiCard3 />
-              <Circle />
-            </Col>
+      <div>
+        <Header toggleHidden={toggleHidden} />
+        <Grid numItemsLg={5} numItemsSm={4}>
+          <Grid numItemsSm={0}>
+            <Dashboard isHidden={isHidden} />
           </Grid>
-        </Col>
-      </Grid>
+          <Col numColSpan={3} numColSpanLg={4}>
+            <Grid numItems={1} numItemsSm={0} numItemsLg={3} className='gap-2 mt-3 mt0 '>
+              <Col numColSpan={1} numColSpanLg={2} className='gap-2 mid'>
+                <AreaCharts />
+                <Search />
+              </Col>
+              <Col>
+                <KpiCard1 />
+                <KpiCard3 />
+                <Circle />
+              </Col>
+            </Grid>
+          </Col>
+        </Grid>
+      </div>
     </div>
   );
 };
