@@ -3,25 +3,235 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --boxcolor: rgb(51, 65, 85);
+  --textcolor: #ffffff;
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --arrow-down: rgba(195, 195, 195, 0.82);
+  --hidden-list: rgb(15, 23, 42);
+  --nav: rgb(79, 70, 229);
+  --textcircle: rgb(15, 23, 42);
+  --cardbox: #23273b91;
+}
+body {
+  background-color: #f8fafc;
+}
+.cardstyle {
+  background-color: var(--cardbox);
+  color: var(--textcolor);
+}
+.circlech .fill-tremor-content-emphasis {
+  fill: var(--textcircle);
+}
+.arrowdown {
+  background-color: var(--arrow-down);
+  color: rgb(255, 255, 255);
+}
+.boxshadow {
+  box-shadow: 0 0 #182f8a00, 0 0 #3139a400, 0 1px 3px 0 rgba(0, 0, 0, 0.3),
+    0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+.lightmode {
+  background-color: #f8fafc;
+  color: rgb(15, 23, 42);
+}
+.darkmode {
+  background-color: rgb(15, 23, 42);
+  color: rgb(255, 255, 255);
+}
+.carddark {
+  background-color: var(--boxcolor) !important;
+  color: var(--textcolor) !important;
+}
+.cardsearch {
+  overflow: hidden;
+  height: 9rem;
+  z-index: 2;
+}
+.dqsh:hover {
+  color: rgb(79, 70, 229);
+}
+.list-s:hover {
+  background-color: rgb(229, 231, 235);
+  color: rgb(79, 70, 229);
+  border-radius: 0.2rem;
+}
+.ez {
+  background-color: rgb(31, 41, 55);
+  color: white;
+}
+/* input:focus {
+  outline: blue !important;
+  border: 1px solid rgb(79, 70, 229);
+} */
+input {
+  outline: none;
+}
+path {
+  outline: none !important;
+  border: 1px solid rgb(79, 70, 229);
+}
+.selct {
+  padding: 3px 0;
+  border: 1.5px solid rgb(198 201 207);
+  width: 8rem;
+  font-size: 12px;
+  font-weight: 400;
+  border-radius: 0.2rem;
+  outline: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.selct:focus {
+}
+select option {
+  border: none;
+  outline: none;
+}
+.fa-magnifying-glass {
+  margin-right: 0.5rem;
+  color: rgb(214, 216, 221);
+}
+.fa-chevron-down {
+  padding: 13px 1rem 0;
+  border-radius: 3rem;
+
+  height: 2rem;
+  position: absolute;
+  top: -11px;
+  z-index: 1;
+}
+.cir {
+  margin-top: 3rem;
+}
+.fa-chevron-up {
+  padding: 13px 1rem 0;
+  border-radius: 3rem;
+
+  height: 2rem;
+  position: absolute;
+  top: -11px;
+  z-index: 1;
+}
+.fa-chevron-down:hover {
+  color: rgb(79, 70, 229);
+}
+.fa-chevron-up:hover {
+  color: rgb(79, 70, 229);
+}
+.h5d {
+  color: rgb(112 117 125);
+  font-weight: 400;
+}
+.ch {
+  height: 2rem;
+  position: relative;
+}
+.hiddenlist {
+  /* display: none; */
+}
+.showlist {
+  display: block;
+}
+.headerlist {
+  display: none;
+}
+
+ul .marks {
+  list-style: disc;
+}
+ul .marks:nth-child(1)::marker {
+  color: #f43f5e;
+}
+ul .marks:nth-child(2)::marker {
+  color: #8b5cf6;
+}
+ul .marks:nth-child(3)::marker {
+  color: #6366f1;
+}
+ul .marks:nth-child(4)::marker {
+  color: #06b6d4;
+}
+@media only screen and (max-width: 644px) {
+  .headerlist {
+    padding: 0.5rem 1rem;
+    display: flex;
+    background-color: var(--nav);
+    color: white;
+  }
+  .mt0 {
+    margin-top: 1px;
+  }
+  .showlist {
+    display: none;
+  }
+  .hiddenlist {
+    /* display: block; */
+    position: absolute;
+    height: 1221px;
+    z-index: 3;
+    background-color: rgb(229, 231, 235);
+    color: rgb(15, 23, 42);
+    text-align: center;
+  }
+  .hidden-list2 {
+    background-color: var(--hidden-list);
+    color: var(--textcolor);
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media only screen and (min-width: 1024px) {
+  .mid {
+    margin-right: 1rem;
+  }
+}
+@media only screen and (min-width: 644px) {
+  .hiddenlist {
+    display: none;
+  }
+  .inpt {
+    width: 60px;
+  }
+}
+.card {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.fa-eye:hover {
+  color: rgb(79, 70, 229);
+}
+.pghver:hover {
+  color: rgb(79, 70, 229);
+}
+.scmr {
+  margin-top: 4rem;
+}
+.img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.imgpage {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 0.5rem;
+}
+.imgpage2 {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.info {
+  flex: 1;
+}
+
+.info p {
+  margin: 4px 0;
+}
+.table-t {
+  font-weight: 500;
 }
