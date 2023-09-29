@@ -5,7 +5,7 @@
 :root {
   --boxcolor: unset;
   --textcolor: rgb(15, 23, 42);
-  --textcolor3: #fff;
+  --textcolor3: rgb(15, 23, 42);
   --textcolor2: unset;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
@@ -176,7 +176,7 @@ ul .marks:nth-child(4)::marker {
   }
   .hidden-list2 {
     background-color: var(--hidden-list);
-    color: var(--textcolor2);
+    color: var(--textcolor3);
   }
 }
 
