@@ -5,9 +5,10 @@
 :root {
   --boxcolor: rgb(51, 65, 85);
   --textcolor: #ffffff;
+  --textcolor2: rgb(15, 23, 42);
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
-  --hidden-list: rgb(15, 23, 42);
+  --hidden-list: rgb(229, 231, 235);
   --nav: rgb(79, 70, 229);
   --textcircle: rgb(15, 23, 42);
   --cardbox: #23273b91;
@@ -174,7 +175,7 @@ ul .marks:nth-child(4)::marker {
   }
   .hidden-list2 {
     background-color: var(--hidden-list);
-    color: var(--textcolor);
+    color: var(--textcolor2);
   }
 }
 
