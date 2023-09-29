@@ -4,7 +4,7 @@
 
 :root {
   --boxcolor: unset;
-  --textcolor: #ffffff;
+  --textcolor: unset;
   --textcolor3: unset;
   --textcolor2: unset;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
@@ -38,7 +38,7 @@ body {
 }
 .darkmode {
   background-color: rgb(15, 23, 42);
-  color: rgb(255, 255, 255);
+  color: var(--textcolor);
 }
 .carddark {
   background-color: var(--boxcolor) !important;
