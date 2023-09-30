@@ -5,7 +5,7 @@
 :root {
   --boxcolor: #f8f8f8;
   --textcolor: #ffffff;
-  --textcolor3: unset;
+  --textcolor3: #0f172abd;
   --textcolor2: rgb(15, 23, 42);
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
@@ -13,6 +13,13 @@
   --nav: rgb(79, 70, 229);
   --textcircle: rgb(15, 23, 42);
   --cardbox: #ffffff;
+  --cardbox2: #fff;
+  --boxShadow: 0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),
+    0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82);
+}
+.cardstyle2 {
+  background-color: var(--cardbox2) !important;
+  color: var(--textcolor3);
 }
 body {
   background-color: var(--boxcolor);
@@ -31,8 +38,7 @@ body {
   z-index: 1;
 }
 .boxshadow {
-  box-shadow: 0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82), 0 1px 3px 0 rgba(195, 195, 195, 0.82),
-    0 1px 2px -1px rgba(195, 195, 195, 0.82) !important;
+  box-shadow: var(--boxShadow) !important;
 }
 .lightmode {
   background-color: #f8fafc;

@@ -33,15 +33,20 @@ const Dashboard = ({ isHidden }) => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
     // localStorage.setItem("darkmode", newDarkMode);
-    if (newDarkMode) {
+    if (!newDarkMode) {
       document.documentElement.style.setProperty("--textcolor2", "#000");
-      document.documentElement.style.setProperty("--textcolor3", "rgb(15, 23, 42)");
+      document.documentElement.style.setProperty("--textcolor3", "rgb(15 23 42 / 74%)");
       document.documentElement.style.setProperty("--arrow-down", "rgb(195 195 195 / 82%)");
       document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
       document.documentElement.style.setProperty("--nav", "rgb(79, 70, 229)");
       document.documentElement.style.setProperty("--boxcolor", "#f8f8f8");
       document.documentElement.style.setProperty("--cardbox", "#fff");
+      document.documentElement.style.setProperty("--cardbox2", "#fff");
       document.documentElement.style.setProperty("--textcircle", "rgb(15, 23, 42)");
+      document.documentElement.style.setProperty(
+        "--boxShadow",
+        "0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82)"
+      );
     } else {
       document.documentElement.style.setProperty("--nav", "rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--boxcolor", "rgb(15, 23, 42)");
@@ -50,7 +55,12 @@ const Dashboard = ({ isHidden }) => {
       document.documentElement.style.setProperty("--hidden-list", "rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--textcolor3", "#fff");
       document.documentElement.style.setProperty("--arrow-down", "rgb(64 74 97)");
-      document.documentElement.style.setProperty("--cardbox", "rgb(51, 65, 85)");
+      document.documentElement.style.setProperty("--cardbox", "rgb(47 55 68)");
+      document.documentElement.style.setProperty("--cardbox2", "#444f62");
+      document.documentElement.style.setProperty(
+        "--boxShadow",
+        "0 0 rgba(195, 195, 195, 0.10), 0 0 rgba(195, 195, 195, 0.10),0 1px 3px 0 rgba(195, 195, 195, 0.10), 0 1px 2px -1px rgba(195, 195, 195, 0.10)"
+      );
     }
   };
 
