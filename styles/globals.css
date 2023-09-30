@@ -17,17 +17,21 @@
   --boxShadow: 0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),
     0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82);
   --hover-users: rgb(229, 231, 235);
-  --hover-users-text: rgb(79, 70, 229);
+  --hover-users-text: rgb(117, 111, 222);
+  --catch-blue: rgb(15, 23, 42);
 }
 .cardstyle2 {
   background-color: var(--cardbox2) !important;
   color: var(--textcolor3);
 }
-.hoverblue:hover{
-  color: rgb(79, 70, 229) !important;
+.hoverblue:hover {
+  color: rgb(117, 111, 222) !important;
+}
+.catch-blue {
+  color: var(--catch-blue) !important;
 }
 .cardstyle2:hover {
-  color: rgb(79, 70, 229);
+  color: #756fde;
   transition: all 0.3s ease;
 }
 body {
@@ -67,28 +71,43 @@ body {
   height: 9rem;
   z-index: 2;
 }
+.gray {
+  color: rgb(107, 114, 128);
+}
 .dqsh:hover {
-  color: rgb(79, 70, 229);
+  color: rgb(117, 111, 222);
   transition: all 0.3s ease;
+}
+/* .dqsh {
+  margin-top: 3rem;
+} */
+.dqsh2 {
+  padding-top: 7rem;
 }
 /* rgb(229, 231, 235) */
 .sr-list:hover {
   background-color: var(--hover-users) !important;
   color: var(--hover-users-text) !important;
   transition: all 0.4s ease;
+  border-radius: 0.2rem;
 }
 .sr-list {
   /* color: rgb(79, 70, 229) !important; */
 }
 .list-s:hover {
   background-color: var(--hover-users);
-  color: rgb(79, 70, 229);
+  color: rgb(117, 111, 222);
   border-radius: 0.2rem;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .ez {
   background-color: rgb(31, 41, 55);
   color: white;
+}
+.fa-moon:hover {
+  transition: all 0.4s ease;
+  color: var(--hover-users-text) !important;
 }
 /* input:focus {
   outline: blue !important;
@@ -189,6 +208,8 @@ ul .marks:nth-child(4)::marker {
     display: flex;
     background-color: var(--nav);
     color: white;
+    position: relative;
+    z-index: 5;
   }
   .mt0 {
     margin-top: 1px;
@@ -208,6 +229,13 @@ ul .marks:nth-child(4)::marker {
   .hidden-list2 {
     background-color: var(--hidden-list);
     color: var(--textcolor3);
+    z-index: 4;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+  }
+  .card-pd {
+    padding: 0 2rem;
   }
 }
 
@@ -271,4 +299,7 @@ ul .marks:nth-child(4)::marker {
 .imgS {
   width: 6rem;
   height: 6rem;
+}
+.borderin {
+  border-bottom: 1px solid #ffffffdb;
 }

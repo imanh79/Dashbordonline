@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import Header from "../../Component/Header/Header";
 
-
-import {
-  Grid,
-  Col,
-  Card,
-} from "@tremor/react";
+import { Grid, Col, Card } from "@tremor/react";
 import Dashboard from "../../Component/dashboard/Dashboard";
 import { useRouter } from "next/router";
 import PageDetails from "./PageDetails";
@@ -238,7 +233,7 @@ const Index = () => {
           <Dashboard isHidden={isHidden} />
         </Grid>
         <Col numColSpan={3} numColSpanLg={4}>
-          <Grid numItems={1} numItemsSm={0} numItemsLg={2} className='gap-2 mt-3'>
+          <Grid numItems={1} numItemsSm={0} numItemsLg={2} className='gap-2 mt-3 card-pd'>
             <Col numColSpan={1} numColSpanLg={2} className='gap-2 mid'>
               <Card className='ring-0 carddark boxshadow'>
                 <PageDetails {...newusers} />

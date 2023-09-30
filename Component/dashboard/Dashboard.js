@@ -17,22 +17,24 @@ const Dashboard = ({ isHidden }) => {
 
     "--hover-users": "rgb(229, 231, 235)",
     "--hover-users-text": "rgb(79, 70, 229)",
+    "--catch-blue": "rgb(15, 23, 42)",
   };
 
   const darkStyles = {
     "--nav": "rgb(15, 23, 42)",
-    "--boxcolor": "rgb(15, 23, 42)",
-    "--textcircle": "rgb(255, 255, 255)",
+    "--boxcolor": "#1a1625",
+    "--textcircle": "rgb(229, 231, 235)",
     "--textcolor2": "#fff",
     "--hidden-list": "rgb(63 70 86)",
     "--textcolor3": "#fff",
-    "--arrow-down": "rgb(64 74 97)",
-    "--cardbox": "rgb(47 55 68)",
-    "--cardbox2": "#444f62",
+    "--arrow-down": "#2f2b3a",
+    "--cardbox": "#2f2b3a",
+    "--cardbox2": "#46424f",
     "--boxShadow":
       "0 0 rgba(195, 195, 195, 0.10), 0 0 rgba(195, 195, 195, 0.10),0 1px 3px 0 rgba(195, 195, 195, 0.10), 0 1px 2px -1px rgba(195, 195, 195, 0.10)",
-    "--hover-users": "rgb(17 33 66)",
-    "--hover-users-text": "rgb(79, 70, 229)",
+    "--hover-users": "#46424f",
+    "--hover-users-text": "rgb(117, 111, 222)",
+    "--catch-blue": "rgb(117 111 222)",
   };
   const applyStyles = (isDarkMode) => {
     const styles = isDarkMode ? darkStyles : lightStyles;
@@ -66,7 +68,7 @@ const Dashboard = ({ isHidden }) => {
     <div>
       <div className={` h-100 ${isHidden ? "hidden" : ""} hiddenlist hidden-list2`}>
         <h1 className='mt-6  dqsh'></h1>{" "}
-        <nav>
+        <nav className='dqsh2'>
           <ul className=' '>
             <li className='px-4 py-3 list-s '>
               <i className='fa-duotone fa-moon' onClick={toggleDarkMode}></i>

@@ -29,8 +29,8 @@ export default function KpiCardGrid() {
         <Card key={item.title} className='carddark boxshadow'>
           <Flex alignItems='start'>
             <div className='truncate'>
-              <Text className='carddark'>{item.title}</Text>
-              <Metric className='truncate carddark hoverblue'>{item.metric}</Metric>
+              <Text className='carddark catch-blue'>{item.title}</Text>
+              <Metric className='truncate catch-blue  hoverblue '>{item.metric}</Metric>
             </div>
             <BadgeDelta deltaType={item.deltaType}>{item.delta}</BadgeDelta>
           </Flex>

@@ -236,7 +236,7 @@ const Index = () => {
           <Dashboard isHidden={isHidden} />
         </Grid>
         <Col numColSpan={3} numColSpanLg={4}>
-          <Grid numItems={1} numItemsSm={0} numItemsLg={2} className='gap-2 mt-3 mt0'>
+          <Grid numItems={1} numItemsSm={0} numItemsLg={2} className='gap-2 mt-3 mt0 card-pd'>
             <Col numColSpan={1} numColSpanLg={2} className='gap-2 mid'>
               <Card className='carddark boxshadow'>
                 <div className='mx-auto text-center md:max-w-xl lg:max-w-3xl'>
@@ -283,7 +283,7 @@ const Index = () => {
                         <a
                           className={`px-2 py-1 rounded text-center transition-all ${
                             index === currentPage
-                              ? "font-bold bg-blue-600 text-white"
+                              ? "font-bold bg-[#756fde] text-white"
                               : "pghver carddark border-gray-300 text-gray-600 hover:bg-gray-100 hover:text-gray-700"
                           }`}
                           href='#!'
@@ -291,7 +291,7 @@ const Index = () => {
                         >
                           {index + 1}
                           {index === currentPage && (
-                            <span className='-m-px h-px w-px absolute overflow-hidden bg-blue-600 text-white'>
+                            <span className='-m-px h-px w-px absolute overflow-hidden bg-[#756fde] text-white'>
                               (current)
                             </span>
                           )}

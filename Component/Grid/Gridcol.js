@@ -23,7 +23,7 @@ const Gridcol = () => {
             <Dashboard isHidden={isHidden} />
           </Grid>
           <Col numColSpan={3} numColSpanLg={4}>
-            <Grid numItems={1} numItemsSm={0} numItemsLg={3} className='gap-2 mt-3 mt0 '>
+            <Grid numItems={1} numItemsSm={0} numItemsLg={3} className='gap-2 mt-3 mt0 card-pd'>
               <Col numColSpan={1} numColSpanLg={2} className='gap-2 mid'>
                 <AreaCharts />
                 <Search />
