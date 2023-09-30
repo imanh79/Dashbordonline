@@ -15,7 +15,8 @@
   --cardbox: unset;
 }
 body {
-  /* background-color: #f8fafc; */
+  background-color: #f8fafc;
+  color: var(--textcolor3);
 }
 .cardstyle {
   background-color: var(--cardbox);
