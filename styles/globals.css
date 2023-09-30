@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --boxcolor: unset;
+  --boxcolor: #f8f8f8;
   --textcolor: #ffffff;
   --textcolor3: unset;
   --textcolor2: rgb(15, 23, 42);
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
-  --hidden-list: rgb(229, 231, 235);
+  --hidden-list: #e5e7eb;
   --nav: rgb(79, 70, 229);
   --textcircle: rgb(15, 23, 42);
-  --cardbox: unset;
+  --cardbox: #ffffff;
 }
 body {
   background-color: var(--boxcolor);
@@ -43,8 +43,8 @@ body {
   color: rgb(255, 255, 255); */
 }
 .carddark {
-  background-color: var(--cardbox);
-  color: var(--textcolor3);
+  background-color: var(--cardbox) !important;
+  color: var(--textcolor3) !important;
 }
 .cardsearch {
   overflow: hidden;

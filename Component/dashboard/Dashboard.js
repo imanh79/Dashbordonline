@@ -34,14 +34,13 @@ const Dashboard = ({ isHidden }) => {
     setDarkMode(newDarkMode);
     // localStorage.setItem("darkmode", newDarkMode);
     if (newDarkMode) {
-      document.documentElement.style.setProperty("--boxcolor", "#fff");
-
       document.documentElement.style.setProperty("--textcolor2", "#000");
       document.documentElement.style.setProperty("--textcolor3", "rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--arrow-down", "rgb(195 195 195 / 82%)");
       document.documentElement.style.setProperty("--textcircle", "rgb(255, 255, 255)");
       document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
       document.documentElement.style.setProperty("--nav", "rgb(79, 70, 229)");
+      document.documentElement.style.setProperty("--boxcolor", "#f8f8f8");
       document.documentElement.style.setProperty("--cardbox", "#fff");
     } else {
       document.documentElement.style.setProperty("--nav", "rgb(15, 23, 42)");
