@@ -235,7 +235,7 @@ ul .marks:nth-child(4)::marker {
     position: fixed;
   }
   .card-pd {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 }
 
