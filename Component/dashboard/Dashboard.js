@@ -24,7 +24,7 @@ const Dashboard = ({ isHidden }) => {
     "--boxcolor": "rgb(15, 23, 42)",
     "--textcircle": "rgb(255, 255, 255)",
     "--textcolor2": "#fff",
-    "--hidden-list": "rgb(15, 23, 42)",
+    "--hidden-list": "rgb(63 70 86)",
     "--textcolor3": "#fff",
     "--arrow-down": "rgb(64 74 97)",
     "--cardbox": "rgb(47 55 68)",
