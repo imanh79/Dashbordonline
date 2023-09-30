@@ -41,7 +41,7 @@ body {
   color: var(--textcolor3);
 }
 .carddark {
-  background-color: var(--boxcolor) !important;
+  background-color: var(--boxcolor);
   color: var(--textcolor3);
 }
 .cardsearch {
