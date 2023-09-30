@@ -27,7 +27,7 @@ const Dashboard = ({ isHidden }) => {
       document.body.classList.remove("darkmode");
       document.documentElement.style.setProperty("--boxcolor", "#f8fafc");
 
-      document.documentElement.style.setProperty("--textcolor3", "#rgb(15, 23, 42)");
+      document.documentElement.style.setProperty("--textcolor3", "rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--cardbox", "rgb(255, 255, 255)");
       document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
     }
