@@ -3,20 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --boxcolor: #f8fafc;
-  --textcolor: rgb(15, 23, 42);
-  --textcolor3: rgb(15 23 42);
-  --textcolor2: unset;
+  --boxcolor: unset;
+  --textcolor: #ffffff;
+  --textcolor3: unset;
+  --textcolor2: rgb(15, 23, 42);
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
-  --hidden-list: unset;
+  --hidden-list: rgb(229, 231, 235);
   --nav: rgb(79, 70, 229);
-  --textcircle: unset;
+  --textcircle: rgb(15, 23, 42);
   --cardbox: unset;
 }
 body {
-  background-color: #f8fafc;
-  color: var(--textcolor3);
+  background-color: var(--boxcolor);
+  color: var(--textcolor2) !important;
 }
 .cardstyle {
   background-color: var(--cardbox);
@@ -28,6 +28,7 @@ body {
 .arrowdown {
   background-color: var(--arrow-down);
   color: rgb(255, 255, 255);
+  z-index: 1;
 }
 .boxshadow {
   box-shadow: 0 0 #182f8a00, 0 0 #3139a400, 0 1px 3px 0 rgba(0, 0, 0, 0.3),
@@ -38,11 +39,11 @@ body {
   color: rgb(15, 23, 42);
 }
 .darkmode {
-  background-color: rgb(15, 23, 42);
-  color: var(--textcolor3);
+  /* background-color: rgb(15, 23, 42);
+  color: rgb(255, 255, 255); */
 }
 .carddark {
-  background-color: var(--boxcolor);
+  background-color: var(--cardbox);
   color: var(--textcolor3);
 }
 .cardsearch {
@@ -127,7 +128,9 @@ select option {
 .ch {
   height: 2rem;
   position: relative;
+  overflow: hidden;
 }
+
 .hiddenlist {
   /* display: none; */
 }
