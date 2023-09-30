@@ -211,13 +211,13 @@ const userRows = [
   },
 ];
 const Search = () => {
-  const [cardHeight, setCardHeight] = useState("8.9rem");
+  const [cardHeight, setCardHeight] = useState("8.8rem");
   const [name, setName] = useState("");
   const [selectedRole, setSelectedRole] = useState("");
   const [isExpanded, setIsExpanded] = useState(false);
   const handleClick = () => {
     const maxHeight = 547;
-    const newHeight = parseInt(cardHeight) + 547;
+    const newHeight = parseInt(cardHeight) + 545;
     if (!isExpanded && newHeight >= maxHeight) {
       setIsExpanded(true);
       setCardHeight(`${maxHeight}px`);
