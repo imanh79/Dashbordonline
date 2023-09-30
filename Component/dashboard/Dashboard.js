@@ -15,7 +15,7 @@ const Dashboard = ({ isHidden }) => {
     "--boxShadow":
       "0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82)",
 
-    "--hover-users": "rgb(229, 231, 235)",
+    "--hover-users": "rgb(17 33 66)",
     "--hover-users-text": "rgb(79, 70, 229)",
   };
 
