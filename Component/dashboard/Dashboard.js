@@ -2,67 +2,65 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 const Dashboard = ({ isHidden }) => {
   const [darkMode, setDarkMode] = useState(false);
+  const lightStyles = {
+    "--textcolor2": "#000",
+    "--textcolor3": "rgb(15 23 42 / 74%)",
+    "--arrow-down": "rgb(195 195 195 / 82%)",
+    "--hidden-list": "rgb(229, 231, 235)",
+    "--nav": "rgb(79, 70, 229)",
+    "--boxcolor": "#f8f8f8",
+    "--cardbox": "#fff",
+    "--cardbox2": "#f8f8f9",
+    "--textcircle": "rgb(15, 23, 42)",
+    "--boxShadow":
+      "0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82)",
 
-  // useEffect(() => {
-  //   let isDarkMode = localStorage.getItem("darkmode");
+    "--hover-users": "rgb(229, 231, 235)",
+    "--hover-users-text": "rgb(79, 70, 229)",
+  };
 
-  //   if (isDarkMode === null) {
-  //     isDarkMode = false;
-  //     localStorage.setItem("darkmode", isDarkMode);
-  //   } else {
-  //     isDarkMode = isDarkMode === "true";
-  //   }
+  const darkStyles = {
+    "--nav": "rgb(15, 23, 42)",
+    "--boxcolor": "rgb(15, 23, 42)",
+    "--textcircle": "rgb(255, 255, 255)",
+    "--textcolor2": "#fff",
+    "--hidden-list": "rgb(15, 23, 42)",
+    "--textcolor3": "#fff",
+    "--arrow-down": "rgb(64 74 97)",
+    "--cardbox": "rgb(47 55 68)",
+    "--cardbox2": "#444f62",
+    "--boxShadow":
+      "0 0 rgba(195, 195, 195, 0.10), 0 0 rgba(195, 195, 195, 0.10),0 1px 3px 0 rgba(195, 195, 195, 0.10), 0 1px 2px -1px rgba(195, 195, 195, 0.10)",
+    "--hover-users": "rgb(17 33 66)",
+    "--hover-users-text": "rgb(79, 70, 229)",
+  };
+  const applyStyles = (isDarkMode) => {
+    const styles = isDarkMode ? darkStyles : lightStyles;
+    Object.entries(styles).forEach(([key, value]) => {
+      document.documentElement.style.setProperty(key, value);
+    });
+  };
 
-  //   setDarkMode(isDarkMode);
-
-  //   if (isDarkMode) {
-  //     document.body.classList.add("darkmode");
-  //     document.documentElement.style.setProperty("--boxcolor", "rgb(51, 65, 85)");
-  //     document.documentElement.style.setProperty("--textcolor3", "#fff");
-  //     document.documentElement.style.setProperty("--textcircle", "rgb(255, 255, 255)");
-  //     document.documentElement.style.setProperty("--cardbox", "#23273b91");
-  //   } else {
-  //     document.body.classList.remove("darkmode");
-  //     document.documentElement.style.setProperty("--boxcolor", "#f8fafc");
-
-  //     document.documentElement.style.setProperty("--textcolor3", "rgb(15 23 42)");
-  //     document.documentElement.style.setProperty("--cardbox", "rgb(255, 255, 255)");
-  //   }
-  // }, []);
   const toggleDarkMode = () => {
     const newDarkMode = !darkMode;
     setDarkMode(newDarkMode);
-    // localStorage.setItem("darkmode", newDarkMode);
-    if (!newDarkMode) {
-      document.documentElement.style.setProperty("--textcolor2", "#000");
-      document.documentElement.style.setProperty("--textcolor3", "rgb(15 23 42 / 74%)");
-      document.documentElement.style.setProperty("--arrow-down", "rgb(195 195 195 / 82%)");
-      document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
-      document.documentElement.style.setProperty("--nav", "rgb(79, 70, 229)");
-      document.documentElement.style.setProperty("--boxcolor", "#f8f8f8");
-      document.documentElement.style.setProperty("--cardbox", "#fff");
-      document.documentElement.style.setProperty("--cardbox2", "#fff");
-      document.documentElement.style.setProperty("--textcircle", "rgb(15, 23, 42)");
-      document.documentElement.style.setProperty(
-        "--boxShadow",
-        "0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82)"
-      );
-    } else {
-      document.documentElement.style.setProperty("--nav", "rgb(15, 23, 42)");
-      document.documentElement.style.setProperty("--boxcolor", "rgb(15, 23, 42)");
-      document.documentElement.style.setProperty("--textcircle", "rgb(255, 255, 255)");
-      document.documentElement.style.setProperty("--textcolor2", "#fff");
-      document.documentElement.style.setProperty("--hidden-list", "rgb(15, 23, 42)");
-      document.documentElement.style.setProperty("--textcolor3", "#fff");
-      document.documentElement.style.setProperty("--arrow-down", "rgb(64 74 97)");
-      document.documentElement.style.setProperty("--cardbox", "rgb(47 55 68)");
-      document.documentElement.style.setProperty("--cardbox2", "#444f62");
-      document.documentElement.style.setProperty(
-        "--boxShadow",
-        "0 0 rgba(195, 195, 195, 0.10), 0 0 rgba(195, 195, 195, 0.10),0 1px 3px 0 rgba(195, 195, 195, 0.10), 0 1px 2px -1px rgba(195, 195, 195, 0.10)"
-      );
-    }
+
+    // ذخیره مقدار newDarkMode در لوکال استوریج
+    localStorage.setItem("darkMode", newDarkMode.toString());
+
+    // اعمال استایل‌ها بر اساس مود دارک جدید
+    applyStyles(newDarkMode);
   };
+
+  // بررسی مقدار از localStorage در هنگام بارگذاری اولیه
+  useEffect(() => {
+    const savedDarkMode = localStorage.getItem("darkMode");
+    if (savedDarkMode) {
+      const isDarkMode = savedDarkMode === "true";
+      setDarkMode(isDarkMode);
+      applyStyles(isDarkMode);
+    }
+  }, []);
 
   return (
     <div>

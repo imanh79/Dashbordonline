@@ -84,7 +84,7 @@ const userRows = [
     verified: true,
     status: "offline",
     about:
-      "He's a dedicated software engineer, driven by a profound fascination with technology and its limitless possibilities. His days are spent coding, problem-solving, and architecting innovative solutions. In his leisure hours, he dives into the virtual realm, gaming and keeping abreast of the latest tech trends. His curiosity knows no bounds.",
+      "He's a dedicated software engineer, driven by a profound fascination with technology and its limitless possibilities. His days are spent coding, problem-solving, and architecting innovative solutions.",
     role: "Front-end Developer",
     salaryExpectation: "$95,000",
   },

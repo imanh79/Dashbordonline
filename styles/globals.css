@@ -16,14 +16,21 @@
   --cardbox2: #fff;
   --boxShadow: 0 0 rgba(195, 195, 195, 0.82), 0 0 rgba(195, 195, 195, 0.82),
     0 1px 3px 0 rgba(195, 195, 195, 0.82), 0 1px 2px -1px rgba(195, 195, 195, 0.82);
+  --hover-users: rgb(17 33 66);
+  --hover-users-text: rgb(79, 70, 229);
 }
 .cardstyle2 {
   background-color: var(--cardbox2) !important;
   color: var(--textcolor3);
 }
+.cardstyle2:hover {
+  color: rgb(79, 70, 229);
+  transition: all 0.3s ease;
+}
 body {
   background-color: var(--boxcolor);
   color: var(--textcolor2) !important;
+  transition: all 0.4s ease;
 }
 .cardstyle {
   background-color: var(--cardbox);
@@ -59,11 +66,22 @@ body {
 }
 .dqsh:hover {
   color: rgb(79, 70, 229);
+  transition: all 0.3s ease;
+}
+/* rgb(229, 231, 235) */
+.sr-list:hover {
+  background-color: var(--hover-users) !important;
+  color: var(--hover-users-text) !important;
+  transition: all 0.4s ease;
+}
+.sr-list {
+  /* color: rgb(79, 70, 229) !important; */
 }
 .list-s:hover {
-  background-color: rgb(229, 231, 235);
+  background-color: var(--hover-users);
   color: rgb(79, 70, 229);
   border-radius: 0.2rem;
+  transition: all 0.4s ease;
 }
 .ez {
   background-color: rgb(31, 41, 55);

@@ -274,7 +274,7 @@ const Search = () => {
             <Link href={`Pages/${person.id}`} key={index}>
               <li
                 key={index}
-                className='flex w-full p-4 justify-between  gap-x-6 py-5 '
+                className='sr-list flex w-full p-4 justify-between  gap-x-6 py-5 sr-list'
                 style={{
                   borderBottom:
                     index === filteredPeople.length - 1 ? "none" : "1px solid rgb(209 210 214)",
@@ -287,17 +287,13 @@ const Search = () => {
                     src={person.img}
                     alt=''
                   />
-                  <div className='min-w-0 flex-auto '>
-                    <p className='text-sm font-semibold leading-6 text-gray-900 carddark'>
-                      {person.fullName}
-                    </p>
-                    <p className='mt-1 truncate text-xs leading-5 text-gray-500 carddark'>
-                      {person.email}
-                    </p>
+                  <div className='min-w-0 flex-auto  sr-list'>
+                    <p className='text-sm font-semibold leading-6 sr-list'>{person.fullName}</p>
+                    <p className='mt-1 truncate text-xs leading-5 sr-list'>{person.email}</p>
                   </div>
                 </div>
-                <div className=' shrink-0 sm:flex sm:flex-col sm:items-end'>
-                  <p className='text-sm leading-6 text-gray-900 carddark'>{person.role}</p>
+                <div className=' shrink-0 sm:flex sm:flex-col sm:items-end  sr-list'>
+                  <p className='text-sm leading-6  '>{person.role}</p>
                 </div>
               </li>
             </Link>
