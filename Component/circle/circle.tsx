@@ -36,10 +36,10 @@ export default function Circle() {
       />
 
       <ul className='flex justify-between items-center mt-2 px-4 flex-wrap flex-col '>
-        <li className='marks'>New York</li>
-        <li className='marks'>London</li>
-        <li className='marks'>Hong Kong</li>
-        <li className='marks'>Italy</li>
+        <li className='marks hoverblue'>New York</li>
+        <li className='marks hoverblue'>London</li>
+        <li className='marks hoverblue'>Hong Kong</li>
+        <li className='marks hoverblue'>Italy</li>
       </ul>
     </Card>
   );

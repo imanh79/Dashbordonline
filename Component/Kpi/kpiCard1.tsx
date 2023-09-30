@@ -30,11 +30,9 @@ export default function KpiCardGrid() {
           <Flex alignItems='start'>
             <div className='truncate'>
               <Text className='carddark'>{item.title}</Text>
-              <Metric className='truncate carddark'>{item.metric}</Metric>
+              <Metric className='truncate carddark hoverblue'>{item.metric}</Metric>
             </div>
-            <BadgeDelta deltaType={item.deltaType}>
-              {item.delta}
-            </BadgeDelta>
+            <BadgeDelta deltaType={item.deltaType}>{item.delta}</BadgeDelta>
           </Flex>
           <Flex className='mt-4 space-x-2'>
             <Text className='truncate '>{`${item.progress}% (${item.metric})`}</Text>

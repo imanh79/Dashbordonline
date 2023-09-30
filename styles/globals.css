@@ -23,6 +23,9 @@
   background-color: var(--cardbox2) !important;
   color: var(--textcolor3);
 }
+.hoverblue:hover{
+  color: rgb(79, 70, 229) !important;
+}
 .cardstyle2:hover {
   color: rgb(79, 70, 229);
   transition: all 0.3s ease;

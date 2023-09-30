@@ -29,7 +29,7 @@ export default function KpiCard3() {
           <Flex alignItems='start'>
             <div className='truncate'>
               <Text className='carddark'>{item.title}</Text>
-              <Metric className='truncate carddark'>$ {item.metric}</Metric>
+              <Metric className='truncate carddark hoverblue'>$ {item.metric}</Metric>
             </div>
             <BadgeDelta deltaType={item.deltaType} className=''>
               {item.delta}
