@@ -17,19 +17,16 @@ const Dashboard = ({ isHidden }) => {
 
     if (isDarkMode) {
       document.body.classList.add("darkmode");
-
       document.documentElement.style.setProperty("--boxcolor", "rgb(51, 65, 85)");
       document.documentElement.style.setProperty("--textcolor3", "#fff");
       document.documentElement.style.setProperty("--textcircle", "rgb(255, 255, 255)");
       document.documentElement.style.setProperty("--cardbox", "#23273b91");
-
-      document.documentElement.style.setProperty("--hidden-list", "rgb(15, 23, 42)");
     } else {
       document.body.classList.remove("darkmode");
-      document.documentElement.style.setProperty("--boxcolor", "#fff");
-      document.documentElement.style.setProperty("--textcolor3", "rgb(15, 23, 42)");
+      document.documentElement.style.setProperty("--boxcolor", "#f8fafc");
+
+      document.documentElement.style.setProperty("--textcolor3", "rgb(15 23 42)");
       document.documentElement.style.setProperty("--cardbox", "rgb(255, 255, 255)");
-      document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
     }
   }, []);
   const toggleDarkMode = () => {
@@ -39,8 +36,9 @@ const Dashboard = ({ isHidden }) => {
     if (newDarkMode) {
       document.body.classList.add("darkmode");
       document.documentElement.style.setProperty("--boxcolor", "rgb(51, 65, 85)");
-      document.documentElement.style.setProperty("--textcolor3", "#fff");
+
       document.documentElement.style.setProperty("--textcolor2", "#fff");
+      document.documentElement.style.setProperty("--textcolor3", "#fff");
       document.documentElement.style.setProperty("--arrow-down", "rgb(64 74 97)");
       document.documentElement.style.setProperty("--hidden-list", "rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--nav", "rgb(15, 23, 42)");
@@ -49,10 +47,10 @@ const Dashboard = ({ isHidden }) => {
     } else {
       document.body.classList.remove("darkmode");
       document.documentElement.style.setProperty("--nav", "rgb(79, 70, 229)");
-      document.documentElement.style.setProperty("--boxcolor", "#fff");
-      document.documentElement.style.setProperty("--textcolor3", "rgb(15, 23, 42)");
-      document.documentElement.style.setProperty("--textcolor", "#fff");
+      document.documentElement.style.setProperty("--boxcolor", "#f8fafc");
+
       document.documentElement.style.setProperty("--textcolor2", "#000");
+      document.documentElement.style.setProperty("--textcolor3", "rgb(15, 23, 42)");
       document.documentElement.style.setProperty("--arrow-down", "rgb(195 195 195 / 82%)");
       document.documentElement.style.setProperty("--hidden-list", "rgb(229, 231, 235)");
       document.documentElement.style.setProperty("--textcircle", "rgb(15, 23, 42)");

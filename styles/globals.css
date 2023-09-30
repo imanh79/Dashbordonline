@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --boxcolor: unset;
+  --boxcolor: #f8fafc;
   --textcolor: rgb(15, 23, 42);
-  --textcolor3: unset;
+  --textcolor3: rgb(15 23 42);
   --textcolor2: unset;
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --arrow-down: rgba(195, 195, 195, 0.82);
