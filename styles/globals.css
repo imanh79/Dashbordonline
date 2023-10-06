@@ -20,6 +20,11 @@
   --hover-users-text: rgb(117, 111, 222);
   --catch-blue: rgb(15, 23, 42);
 }
+body {
+  background-color: var(--boxcolor);
+  color: var(--textcolor2) !important;
+  transition: all 0.4s ease;
+}
 .cardstyle2 {
   background-color: var(--cardbox2) !important;
   color: var(--textcolor3);
@@ -33,11 +38,6 @@
 .cardstyle2:hover {
   color: #756fde;
   transition: all 0.3s ease;
-}
-body {
-  background-color: var(--boxcolor);
-  color: var(--textcolor2) !important;
-  transition: all 0.4s ease;
 }
 .cardstyle {
   background-color: var(--cardbox);

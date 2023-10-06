@@ -159,8 +159,14 @@ const Dashboard = ({ isHidden }) => {
               <i className='fa-solid fa-flag mr-2 '></i>Reports
             </li>
           </ul>
-
-          <p className=' mt-8 ml-4 text-start'>Developed By iman♡</p>
+          <Link
+            href={"https://github.com/imanh79"}
+            style={{ textDecoration: "none" }}
+            className='hoverblue'
+          >
+            <i className='fa-brands fa-github ml-4'></i>
+            <p className=' mt-8 ml-2 text-start inline-block'>Developed by Iman♡</p>{" "}
+          </Link>
         </nav>
       </div>
     </div>
